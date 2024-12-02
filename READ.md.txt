@@ -1,0 +1,50 @@
+California Housing Price Prediction with Machine Learning
+This project focuses on predicting California housing prices using census data from the 1990 California Census dataset. The dataset includes various attributes like location, demographics, and median income, providing a foundation to explore regression techniques and hyperparameter tuning for better predictive accuracy.
+
+Project Overview
+This repository demonstrates the application of three machine learning models: Linear Regression, Decision Tree Regression, and Random Forest Regression. The project also includes hyperparameter tuning of the Random Forest model using GridSearchCV to enhance its performance. Metrics such as RMSE (Root Mean Squared Error) and MAE (Mean Absolute Error) are used to evaluate model effectiveness.
+
+Dataset
+The dataset contains the following columns:
+
+longitude: Geographic coordinate (east-west) of the district.
+latitude: Geographic coordinate (north-south) of the district.
+housingMedianAge: Median age of the houses in the district.
+totalRooms: Total number of rooms in the district.
+totalBedrooms: Total number of bedrooms in the district.
+population: Total population in the district.
+households: Total households in the district.
+medianIncome: Median income in tens of thousands of dollars.
+medianHouseValue: Median house value in U.S. dollars.
+oceanProximity: Proximity to the ocean (categorical).
+Project Workflow
+1. Data Preprocessing
+Handled missing values by imputing the median for totalBedrooms.
+Performed one-hot encoding for the categorical variable ocean_proximity.
+Scaled numerical data for better model performance.
+2. Model Training and Evaluation
+Models Used:
+
+Linear Regression
+Decision Tree Regression
+Random Forest Regression
+
+Metrics:
+RMSE (Root Mean Squared Error)
+MAE (Mean Absolute Error)
+3. Hyperparameter Tuning with GridSearchCV
+Tuned n_estimators, max_depth, min_samples_split, and min_samples_leaf for the Random Forest model.
+Used cross-validation (cv=3) and neg_mean_squared_error as the scoring metric.
+
+
+Dependencies
+This project uses the following libraries:
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+
+Clone and use this command on 
+python -r requirements.txt
